@@ -9,7 +9,52 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="scss/nav.css">
+    <script src="js/header.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./js/footer.js"></script>
+    <link rel="stylesheet" href="scss/footer.css">
 </head>
+<body>
+    <nav id="navbar">
+        <div class="logo-section">
+            <a href="./index.html"><img src="./favicon.ico" alt="holokitab-logo" id="logo-img"></a>
+            <a href="/index.html">HoloKitab</a>
+        </div>
+        <a id="open-nav" onclick="openNav()">&#9776;</a>
+        <div class="nav-section">
+            <ul>
+                <li><a href="./catalogue.html">CATALOGUE</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+                <li><a href="./contact.html">CONTACT US</a></li>
+                <li><a href="./blogs.html">BLOG</a></li>
+                <li><a href="./faq.html">FAQs</a></li>
+                <button class="shop-now-btn" onclick="window.location.href='http://go.holokitab.in/amazon';">Order
+                    Now</button>
+            </ul>
+        </div>
+    </nav>
+
+    <p id="home"></p>
+
+    <div class="sidenav" id="mynav">
+        <ul>
+            <a id="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/catalogue.html" class="sub-btn">Catalogue</a></li>
+            <li><a href="/blogs.html">Blog</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/faq.html">FAQs</a></li>
+            <button id="shop-now-btn-side" onclick="window.location.href='http://go.holokitab.in/amazon';"
+                class="a-button">Order Now</button>
+        </ul>
+    </div>
+</body>
+
+
 <body>
 
 <div class="faq_area section_padding_130" id="faq">
@@ -20,7 +65,7 @@
                 <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                     <h1>Hi! How we can help you?</h1><br>
                     <h2>FAQs</h2>
-                    <p>Below are the some questions asked by our user. You can find your respective answers.</p>
+                    <p class="p1">Below are the some questions asked by our user. You can find your respective answers.</p>
                     <div class="line"></div>
                 </div>
             </div>
@@ -76,7 +121,10 @@
 
 
 <style type="text/css">
-body{margin-top:20px;background-color: #f5f5ff;}
+body{background-color: #f5f5ff;}
+.p1{
+    font-size: 18px;
+}
 h2{
     text-align: center;
     letter-spacing: 0.4rem;
@@ -85,6 +133,9 @@ h2{
     font-family: 'Fredoka One', cursive;
     font-weight: bolder;
     color: #D2042D;
+}
+h6{
+    font-size: 15px;
 }
 .section_padding_130 {
     padding-top: 30px;
@@ -177,4 +228,64 @@ h2{
 
 </script>
 </body>
+
+
+<body>
+<div class="chat-wrapper">
+    <a href="https://wa.me/918699646484" target="_blank"><img src="./img/home/whatsapp.webp" alt="whatsapp-img"
+            id="whatsapp-img"></a>
+</div>
+
+<footer>
+    <div class="footer-up">
+        <div class="contact">
+            <p>Get in touch</p>
+            <p>Get in touch</p>
+            <p>425/NSG Jalandhar, Punjab 144001</p>
+            <p class="number">+91 8699646484</p>
+            <p class="email">info@holokitab.in</p>
+        </div>
+        <div class="bottomnav">
+            <ul>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/blogs.html">Blogs</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="./pages/policy2.html">Terms and Conditions</a></li>
+                <li><a href="./pages/policy.html">Privacy policy</a></li>
+                <li><a href="#">Shipping, Cancellation & Refunds</a></li>
+            </ul>
+        </div>
+        <div class="bottomnav1">
+            <p><a href="/about.html">About |</a>
+                <a href="/blogs.html">Blogs |</a>
+                <a href="/contact.html">Contacts |</a>
+                <a href="./pages/policy2.html">Terms and Conditions |</a>
+                <a href="./pages/policy.html">Privacy policy |</a>
+                <a href="#">Shipping, Cancellation & Refunds</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-down">
+        <p class="copyright">Designed by HoloKitab Technologies | © Copyright HoloKitab Technologies All Rights Reserved
+        </p>
+
+        <div class="social-media">
+            <div class="all-social-links">
+                <a href="http://Go.holokitab.in/facebook" target="_blank"><img src="./img/home/facebook.webp"
+                        alt="facebook" class="footer-logo"></a>
+                <a href="http://Go.holokitab.in/Instagram" target="_blank"><img src="./img/home/instagram.webp"
+                        alt="instagram" class="footer-logo"></a>
+                <a href="http://Go.holokitab.in/youtube" target="_blank"><img src="./img/home/youtube.png" alt="youtube"
+                        class="footer-logo"></a>
+            </div>
+            <div class="top-scroll">
+                <a href="#home">Back to Top</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+
 </html>
